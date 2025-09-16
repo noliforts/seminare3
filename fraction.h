@@ -1,11 +1,3 @@
-#ifndef FRACTION_H
-#define FRACTION_H
-
-struct Fraction {
-    int num; // числитель
-    int den; // знаменатель
-};
-
 // Объявления функций
 /**
 
@@ -18,6 +10,15 @@ struct Fraction {
  * @return Новая дробь, являющаяся результатом сложения
 
  */
+struct Fraction {
+    int num; // числитель
+    int den; // знаменатель
+};
+#ifndef FRACTION_H
+#define FRACTION_H
+
+
+
 
 Fraction add(Fraction a, Fraction b);
 Fraction multiply(Fraction a, Fraction b);
